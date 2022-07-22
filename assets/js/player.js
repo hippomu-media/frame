@@ -387,4 +387,105 @@ window.addEventListener("message", async e => {
     const hasUserLang = streamlist.find(stream => stream.hardsub_lang == sourceLocale);
     return hasUserLang ? sourceLocale : 'off'
   }
+
+let titlea = video_config_media['metadata']['title'];
+document.getElementById("title").innerHTML = titlea;
+let episodenum = video_config_media['metadata']['display_episode_number'];
+let epi = "EPISODE ";
+document.getElementById("episode").innerHTML = epi + episodenum;
+let imagea = video_config_media['thumbnail']['url'];
+document.getElementById("image").innerHTML = imagea;
+let desc = video_config_media['metadata']['description'];
+document.getElementById("desc").innerHTML = desc;
+
+let subname0 = video_config_media['subtitles'][0]['language'];
+document.getElementById("subname0").innerHTML = subname0;
+let suburl0 = video_config_media['subtitles'][0]['url'];
+let suburl0split = suburl0.split('?')[0];
+let result0 = suburl0split.replace("https://v", "https://fy.v");
+document.getElementById("suburl0").innerHTML = result0;
+
+let subname1 = video_config_media['subtitles'][1]['language'];
+document.getElementById("subname1").innerHTML = subname1;
+let suburl1 = video_config_media['subtitles'][1]['url'];
+let suburl1split = suburl1.split('?')[0];
+let result1 = suburl1split.replace("https://v", "https://fy.v");
+document.getElementById("suburl1").innerHTML = result1;
+
+let subname2 = video_config_media['subtitles'][2]['language'];
+document.getElementById("subname2").innerHTML = subname2;
+let suburl2 = video_config_media['subtitles'][2]['url'];
+let suburl2split = suburl2.split('?')[0];
+let result2 = suburl2split.replace("https://v", "https://fy.v");
+document.getElementById("suburl2").innerHTML = result2;
+
+let subname3 = video_config_media['subtitles'][3]['language'];
+document.getElementById("subname3").innerHTML = subname3;
+let suburl3 = video_config_media['subtitles'][3]['url'];
+let suburl3split = suburl3.split('?')[0];
+let result3 = suburl3split.replace("https://v", "https://fy.v");
+document.getElementById("suburl3").innerHTML = result3;
+
+let subname4 = video_config_media['subtitles'][4]['language'];
+document.getElementById("subname4").innerHTML = subname4;
+let suburl4 = video_config_media['subtitles'][4]['url'];
+let suburl4split = suburl4.split('?')[0];
+let result4 = suburl4split.replace("https://v", "https://fy.v");
+document.getElementById("suburl4").innerHTML = result4;
+
+let subname5 = video_config_media['subtitles'][5]['language'];
+document.getElementById("subname5").innerHTML = subname5;
+let suburl5 = video_config_media['subtitles'][5]['url'];
+let suburl5split = suburl5.split('?')[0];
+let result5 = suburl5split.replace("https://v", "https://fy.v");
+document.getElementById("suburl5").innerHTML = result5;
+
+let subname6 = video_config_media['subtitles'][6]['language'];
+document.getElementById("subname6").innerHTML = subname6;
+let suburl6 = video_config_media['subtitles'][6]['url'];
+let suburl6split = suburl6.split('?')[0];
+let result6 = suburl6split.replace("https://v", "https://fy.v");
+document.getElementById("suburl6").innerHTML = result6;
+
+let subname7 = video_config_media['subtitles'][7]['language'];
+document.getElementById("subname7").innerHTML = subname7;
+let suburl7 = video_config_media['subtitles'][7]['url'];
+let suburl7split = suburl7.split('?')[0];
+let result7 = suburl7split.replace("https://v", "https://fy.v");
+document.getElementById("suburl7").innerHTML = result7;
+
+let subname8 = video_config_media['subtitles'][8]['language'];
+document.getElementById("subname8").innerHTML = subname8;
+let suburl8 = video_config_media['subtitles'][8]['url'];
+let suburl8split = suburl8.split('?')[0];
+let result8 = suburl8split.replace("https://v", "https://fy.v");
+document.getElementById("suburl8").innerHTML = result8;
+
+let subname9 = video_config_media['subtitles'][9]['language'];
+document.getElementById("subname9").innerHTML = subname9;
+let suburl9 = video_config_media['subtitles'][9]['url'];
+let suburl9split = suburl9.split('?')[0];
+let result9 = suburl9split.replace("https://v", "https://fy.v");
+document.getElementById("suburl9").innerHTML = result9;
+
+let subname10 = video_config_media['subtitles'][10]['language'];
+document.getElementById("subname10").innerHTML = subname10;
+let suburl10 = video_config_media['subtitles'][10]['url'];
+let suburl10split = suburl10.split('?')[0];
+let result10 = suburl10split.replace("https://v", "https://fy.v");
+document.getElementById("suburl10").innerHTML = result10;
+
+let subname11 = video_config_media['subtitles'][11]['language'];
+document.getElementById("subname11").innerHTML = subname11;
+let suburl11 = video_config_media['subtitles'][11]['url'];
+let suburl11split = suburl11.split('?')[0];
+let result11 = suburl11split.replace("https://v", "https://fy.v");
+document.getElementById("suburl11").innerHTML = result11;
+
+let subname12 = video_config_media['subtitles'][12]['language'];
+document.getElementById("subname12").innerHTML = subname12;
+let suburl12 = video_config_media['subtitles'][12]['url'];
+let suburl12split = suburl12.split('?')[0];
+let result12 = suburl12split.replace("https://v", "https://fy.v");
+document.getElementById("suburl12").innerHTML = result12;
 });
