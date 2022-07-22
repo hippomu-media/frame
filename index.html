@@ -72,6 +72,62 @@
 		   	<a class="partdditem down-icon" href="https://github.com/mateus7g/crp-iframe-player/releases/download/v1.2.0/Crunchyroll_Premium_Kiwi-Browser.zip" target="_top" download></a>
 		   </div>
 	</div>
+<a id="episode"></a></br>
+<a id="title"></a></br>
+<a id="desc"></a></br>
+<a id="image"></a></br>
+{</br>
+"240":"<a id="240"></a>",</br>
+"360":"<a id="360"></a>",</br>
+"480":"<a id="480"></a>",</br>
+"720":"<a id="720"></a>",</br>
+"1080":"<a id="1080"></a>"</br>
+}</br>
+{</br>
+"<a id="subname0"></a>":"<a id="suburl0"></a>",</br>
+"<a id="subname1"></a>":"<a id="suburl1"></a>",</br>
+"<a id="subname2"></a>":"<a id="suburl2"></a>",</br>
+"<a id="subname3"></a>":"<a id="suburl3"></a>",</br>
+"<a id="subname4"></a>":"<a id="suburl4"></a>",</br>
+"<a id="subname5"></a>":"<a id="suburl5"></a>",</br>
+"<a id="subname6"></a>":"<a id="suburl6"></a>",</br>
+"<a id="subname7"></a>":"<a id="suburl7"></a>",</br>
+"<a id="subname8"></a>":"<a id="suburl8"></a>",</br>
+"<a id="subname9"></a>":"<a id="suburl9"></a>",</br>
+"<a id="subname10"></a>":"<a id="suburl10"></a>",</br>
+"<a id="subname11"></a>":"<a id="suburl11"></a>",</br>
+"<a id="subname12"></a>":"<a id="suburl12"></a>"</br>
+}</br></br>
+
+<script>
+setInterval(function(){
+const element = document.getElementById("240p_down_url"); 
+let url = element.getAttribute("href");
+let split = url.split('?')[0];
+document.getElementById("240").innerHTML = split;
+
+const elementa = document.getElementById("360p_down_url"); 
+let urla = elementa.getAttribute("href");
+let splita = urla.split('?')[0];
+document.getElementById("360").innerHTML = splita;
+
+const elementb = document.getElementById("480p_down_url"); 
+let urlb = elementb.getAttribute("href");
+let splitb = urlb.split('?')[0];
+document.getElementById("480").innerHTML = splitb;
+
+const elementc = document.getElementById("720p_down_url"); 
+let urlc = elementc.getAttribute("href");
+let splitc = urlc.split('?')[0];
+document.getElementById("720").innerHTML = splitc;
+
+const elementd = document.getElementById("1080p_down_url"); 
+let urld = elementd.getAttribute("href");
+let splitd = urld.split('?')[0];
+document.getElementById("1080").innerHTML = splitd;
+
+},3000);
+</script>
 	<div id="player_div"></div>
 	<script src="assets/js/player.js"></script>
 </body>
