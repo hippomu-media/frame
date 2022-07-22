@@ -390,7 +390,7 @@ window.addEventListener("message", async e => {
 
 let titlea = video_config_media['metadata']['title'];
 document.getElementById("title").innerHTML = titlea;
-let subpre = tracks[lang];
+let subpre = track['language'];
 document.getElementById("subpre").innerHTML = subpre;
 
 let episodenum = video_config_media['metadata']['display_episode_number'];
